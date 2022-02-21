@@ -1,0 +1,411 @@
+Proceso sin_titulo
+	
+	// punto 1 y 2, se hace para optimizar el codigo
+	
+//	Definir age Como Entero;
+//	
+//	Escribir 'Ingrese su edad';
+//	Leer age;
+//	
+//	Si age >= 18 Entonces
+//		Escribir 'Usted es mayor de edad';
+//	SiNo
+//		Escribir 'Usted es menor de edad';
+//	FinSi
+	
+	//punto 3
+//	Definir name Como Caracter;
+//	Definir lastName Como Caracter;
+//	Definir age Como Entero;	
+//	
+//	Escribir 'Indique su nombre';
+//	Leer name;
+//	
+//	Escribir 'Indique su apellido';
+//	Leer lastName;
+//	
+//	Escribir 'Indique su edad';
+//	Leer age;
+//	
+//	Si age >= 18 Entonces
+//		Escribir name ,' ', lastname , ' usted es mayor de edad, por lo tanto puede entrar a la fiesta';
+//	SiNo
+//		Escribir name ,' ', lastname , 'Usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa';
+//	FinSi
+	
+	// punto 4
+	
+//	Definir movie Como Caracter;
+//	Definir option Como Entero;
+//	Definir suggestion Como Caracter;
+//	Definir tip Como Caracter;
+//	Definir rent Como Caracter;
+//	
+//	Escribir 'Elija una opción';
+//	Escribir '1. Alquilar pelicula';
+//	Escribir '2. Consultar peliculas disponibles';
+//	Escribir '3. Entregar pelicula, desea hacer una sugerencia s/n?';
+//	Leer option;
+//	// se hace de forma simple ya que son se cuenta aun con arreglos
+//	
+//	Segun option Hacer
+//		1:
+//			Escribir 'Que pelicula desea alquilar de las que estan disponibles? ';
+//			leer rent;
+//			
+//			Escribir 'La pelicula rentada fue ', rent;
+//			
+//		2:
+//			Escribir 'Las peliculas disponibles son:';
+//			Escribir 'Titanic, Armagedon, Duro de matar';
+//			
+//		3:
+//			Escribir 'Ingrese el nombre de la pelicula a regresar';
+//			Leer movie;
+//			
+//			Escribir 'Desea hacer una anotacion sobre la pelicula a regresar? s/n ';
+//			Leer tip;
+//			
+//			Si tip = 's'  Entonces
+//				Escribir 'cual es su sugerencia o anotacion';
+//				Leer suggestion;
+//				
+//				Escribir 'La pelicula regresada fue ', movie, ' ' ,'y la sugerencia es: ', suggestion;
+//			SiNo
+//				Escribir 'La pelicula regresada fue ', movie;
+//
+//			FinSi
+//		De Otro Modo:
+//			Escribir 'la opcion ingresada no es valida';
+//	FinSegun
+	
+	// punto 5
+	
+//	Definir products Como Caracter;
+//	Definir priceA Como Real;
+//	Definir priceAm Como Real;
+//	Definir priceD Como Real;
+//	Definir returns Como Caracter;
+//	Definir option Como Entero;
+//	
+//	priceA<- 5350;
+//	priceAm<- 6400;
+//	priceD<- 5500;
+//	
+//	Escribir 'Elija una opción';
+//	Escribir '1. Compra de productos';
+//	Escribir '2. Consultar precios';
+//	Escribir '3. Devoluciones';
+//	Leer option;
+//	// se hace de forma simple ya que son se cuenta aun con arreglos
+//	
+//	Segun option Hacer
+//		1:
+//			Escribir 'Los productos disponibles son: ';
+//			Escribir 'Acetaminofen, Amoxicilina, Dolex ';
+//			Escribir 'Indique que productos desea llevar ';
+//			leer products;				
+//			
+//			Escribir 'El/los productos comprados fueron ', products;
+//			
+//		2:
+//			Escribir 'El precio de la Acetaminofen es: ';
+//			Escribir priceA;
+//			Escribir 'El precio de la Amoxicilina es: ';
+//			Escribir priceAm;
+//			Escribir 'El precio de la Dolex es: ';
+//			Escribir priceD;
+//			
+//		3:
+//			Escribir 'Ingrese el nombre del(os) medicamento(s) a devover y el porque de la devoluciòn';
+//			Leer returns;
+//			Escribir 'el(los) medicamento(s) regresados y el porque de la devoluciòn es : ', returns;
+//
+//		De Otro Modo:
+//			Escribir 'la opcion ingresada no es valida';
+//	FinSegun
+	
+	// punto 6
+	
+//	Definir option Como Entero;
+//	Definir entry Como Caracter;
+//	Definir observations Como Caracter;
+//	Definir observationsT Como logico;
+//	Definir remarks Como Caracter;
+//	Definir register Como Caracter;
+//	Definir name Como Caracter;
+//	Definir parts Como Caracter;
+//	Definir partsA Como Caracter;
+//	
+//	Escribir 'Elija una opción';
+//	Escribir '1. Registro del ingreso al taller';
+//	Escribir '2. Registro de salida del taller';
+//	Escribir '3. Arreglos hechos por el mecánico';
+//	Leer option;
+//	// se hace de forma simple ya que son se cuenta aun con arreglos
+//	
+//	Segun option Hacer
+//		1:
+//			Escribir 'Indique el nombre de la motocicleta ';
+//			Leer name;
+//			Escribir 'Es un ingreso al taller?, s/n ';
+//			leer entry;	
+//			Escribir 'Desea agregar observaciones?, s/n ';
+//			leer remarks;	
+//			
+//			Si remarks='s' Entonces
+//				Escribir 'Ingrese las observaciones';
+//				Leer observations;
+//			SiNo
+//				Escribir 'El cliente no deja observaciones';
+//			FinSi
+//			
+//			Si entry='s' Entonces
+//				Escribir 'La motocicleta ', name, ' ','ingresa al taller';
+//			SiNo
+//				Escribir 'La motocicleta ', name,' ','actualmente no ha ingresado al taller';
+//			FinSi
+//			
+//		2:
+//			Escribir 'La motocicleta sale del taller? s/n';
+//			Leer register;
+//			
+//			Si register='s' Entonces
+//				Escribir 'La motocicleta sale del taller';
+//			SiNo
+//				Escribir 'La motocicleta aun esta en taller';
+//			FinSi
+//			
+//		3:
+//			Escribir 'La motocicleta fue necesario cambiar o añadir piezas? s/n';
+//			Leer parts;
+//			
+//			Si parts='s' Entonces
+//				Escribir 'Que piezas fueron reemplazadas';
+//				Leer partsA;
+//				Escribir 'Las piezas reemplazas fueron ', partsA, ' ', ', descontar del inventario';
+//			SiNo
+//				Escribir 'No fue necesario reemplazar piezas';
+//			FinSi
+//			
+//		De Otro Modo:
+//			Escribir 'la opcion ingresada no es valida';
+//	FinSegun
+	
+	// punto 7
+	
+//	Definir name Como Caracter;
+//	Definir lastName Como Caracter;
+//	Definir age Como Entero;
+//	Definir weight Como Entero;
+//	Definir height Como Real;
+//	Definir imc Como Real;
+//	
+//	Escribir 'Indique su nombre';
+//	Leer name;
+//	
+//	Escribir 'Indique su apellido';
+//	Leer lastName;
+//	
+//	Escribir 'Indique su edad';
+//	Leer age;
+//	
+//	Escribir 'Indique su peso en Kilogramos (Kg)';
+//	Leer weight;
+//	
+//	Escribir 'Indique su altuta em metros (m)';
+//	Leer height ;
+//	
+//	imc<- weight/(height*height);
+//	Escribir name,' ',lastName,' ','con edad de: ',age,' años ', 'tiene un Índice de masa corporal de: ', imc;
+//	
+//	Si imc < 18.5 Entonces
+//		Escribir name ,' ', lastname , ' usted esta bajo de peso';
+//	FinSi
+//	Si   18.5 <= imc y imc<= 24.9 Entonces
+//		Escribir name ,' ', lastname , ' usted tiene un peso idoneo';
+//	FinSi
+//	Si 25 <= imc y imc<= 29.9 Entonces
+//		Escribir name ,' ', lastname , ' usted tiene sobrepeso';
+//	FinSi
+//	Si imc >= 30 Entonces
+//		Escribir name ,' ', lastname , ' usted obesidad';
+//	FinSi
+	
+	// punto 8
+	
+//	Definir option Como Entero;
+//	Definir request Como Caracter;
+//	Definir observations Como Caracter;
+//	Definir name Como Caracter;
+//	Definir remarks Como Caracter;
+//	Definir cake1,cake2,cake3 Como Caracter;
+//	Definir sale1,sale2,sale3 Como Caracter;
+//	
+//	cake1<- 'Torta Red Velvet es de 8 porciones decorada con crema de limón ';
+//	cake2<- 'Torta Envinada es de 8 porciones y no lleva decoración ';	
+//	cake3<- 'Torta Maria Luisa de arequipe es de 8 porciones decorada con frutos rojos';
+//
+//	
+//	Escribir 'Elija una opción';
+//	Escribir '1. Registrar los pedidos';
+//	Escribir '2. Tortas disponibles';
+//	Escribir '3. Ventas del día';
+//	Leer option;
+//	// se hace de forma simple ya que son se cuenta aun con arreglos
+//	
+//	Segun option Hacer
+//		1:
+//			Escribir 'Ingrese el nombre de la persona que hace el pedido ';
+//			Leer name;
+//			Escribir 'Que torta ordeno? ';
+//			leer request;	
+//			Escribir 'Desea agregar observaciones?, s/n ';
+//			leer remarks;	
+//			
+//			Si remarks='s' Entonces
+//				Escribir 'Ingrese las observaciones';
+//				Leer observations;
+//				Escribir 'El cliente ', name , ' ', 'ordeno ', request, 'y si tiene algúna observacion se añade aca: ', observations;
+//			SiNo
+//				Escribir 'No se deja observaciones',' el cliente  ', name , ' ', 'ordeno ', request;
+//			FinSi
+//			
+//			
+//		2:
+//			Escribir 'Las tortas disponibles son: ';
+//			Escribir cake1;
+//			Escribir cake2;
+//			Escribir cake3;
+//			
+//		3:
+//			Escribir 'Ingrese la catidad de tortas de cake1 vendidas';
+//			Leer sale1;
+//			Escribir 'Ingrese la catidad de tortas de cake2 vendidas';
+//			Leer sale2;
+//			Escribir 'Ingrese la catidad de tortas de cake3 vendidas';
+//			Leer sale3;
+//			
+//			Escribir 'Las tortas vendidas fueron:';
+//			Escribir 'Las tortas de Red Velvet fueron: ', sale1;
+//			Escribir 'Las tortas Envinadas fueron: ',sale2;
+//			Escribir 'Las tortas Maria Luisa fueron: ', sale3;
+//			
+//		De Otro Modo:
+//			Escribir 'la opcion ingresada no es valida';
+//	FinSegun
+	
+	// punto 9
+	
+//	Definir option Como Entero;
+//	Definir lengthR,widthR Como Real;
+//	Definir baseTri,heightTri Como Real;
+//	Definir baseL,baseG,heightTra Como Real;
+//	Definir area Como Real;
+//	
+//	Escribir 'Elija una opción';
+//	Escribir '1. Calcular área de un rectángulo';
+//	Escribir '2. Calcular área de un triángulo';
+//	Escribir '3. Calcular área de un trapecio';
+//	Leer option;
+//	
+//	Segun option Hacer
+//		1:
+//			Escribir 'Ingrese la longitud del rectángulo en cm ';
+//			Leer lengthR;
+//			Escribir 'Ingrese el ancho del rectángulo en cm';
+//			leer widthR;
+//			area<- widthR*lengthR;
+//			Escribir 'El área del rectángulo es: ', area ,' cm^2';
+//			
+//		2:
+//			Escribir 'Ingrese la base del triángulo en cm ';
+//			Leer baseTri;
+//			Escribir 'Ingrese la altura del triángulo en cm';
+//			leer heightTri;
+//			area<- (baseTri*heightTri)/2 ;
+//			Escribir 'El área del triángulo es: ', area ,' cm^2';
+//			
+//		3:
+//			Escribir 'Ingrese la base menor del trapecio en cm ';
+//			Leer baseL;
+//			Escribir 'Ingrese la base mayor del trapecio en cm';
+//			leer baseG;
+//			Escribir 'Ingrese la altura del trapecio en cm';
+//			leer heightTra;
+//			area<- ((baseL+baseG)*heightTra)/2 ;
+//			Escribir 'El área del trapecio es: ', area ,' cm^2';
+//			
+//			
+//		De Otro Modo:
+//			Escribir 'la opcion ingresada no es valida';
+//	FinSegun
+	
+	// punto 10
+	
+//	Definir option Como Entero;
+//	Definir enter,exit,balance Como Real;
+//	Definir name Como Caracter;
+//	Definir type Como Caracter;
+//	Definir condition Como Logico;
+//	
+//	Escribir 'Escriba su nombre completo';
+//	Leer name;
+//	Escribir 'cuenta de ahorros o corriente';
+//	Leer type;
+//	
+//	Escribir 'Elija una opción';
+//	Escribir '1. Desea realizar una consignacion';
+//	Escribir '2. Desea realizar un retiro';
+//	Escribir '3. Consultar saldo';
+//	Leer option;
+//	
+//	enter<-0;
+//	exit<-0;
+//	balance<-0;
+//	condition<- Verdadero;
+//	
+//		
+//	Segun option Hacer
+//		1:
+//			Mientras condition= Verdadero Hacer
+//				Si enter>= 0 Entonces
+//					Escribir 'Ingrese la cantidad de dinero a consignar ';
+//					Leer enter;
+//					balance<-enter;
+//				SiNo
+//					Escribir 'El valor ingresado no puede ser negativo! ';
+//				FinSi	
+//				
+//				Escribir 'Desea realizar otra consignacion?, Verdadero para si, Falso para no';
+//				Leer condition;
+//			FinMientras
+//							
+//			
+//		2:
+//			Mientras condition= Verdadero Hacer
+//				Si exit<= balance Entonces
+//					Escribir 'Ingrese la cantidad de dinero a retirar ';
+//					Leer exit;
+//					balance<-enter-exit;
+//				SiNo
+//					Escribir 'El valor ingresado no puede ser mayor a los fondos disponibles! ';
+//				FinSi
+//				
+//				Escribir 'Desea realizar otra consignacion?, Verdadero para si, Falso para no';
+//				Leer condition;
+//
+//			FinMientras
+//						
+//		3:
+//			Escribir 'El saldo de su cuenta de ', type, ' es:' ;
+//			Escribir balance;
+//			
+//			
+//		De Otro Modo:
+//			Escribir 'la opcion ingresada no es valida';
+//	FinSegun
+//		
+	
+	
+FinProceso
