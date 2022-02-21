@@ -1,0 +1,361 @@
+Proceso TallerArreglos
+	
+	// punto 1
+	
+//	Definir i,array Como Entero;
+//	Dimension array[5];
+//	
+//	Para i<-0 Hasta 4 Con Paso 1 Hacer
+//		Escribir 'Ingrese un numero';
+//		Leer array[i];
+//	FinPara
+//	
+//	Para i<-0 Hasta 4 Con Paso 1 Hacer
+//		Escribir '[',[i],']', '=',  array[i];
+//	FinPara
+	
+	// punto 2
+	
+//	Definir i,array, arrayP,arrayI,ratesP, ratesI Como Entero;
+//	
+//	Dimension array[20];
+//	Dimension arrayP[20];
+//	Dimension arrayI[20];
+//	
+//	ratesP<-0; 
+//	ratesI<-0;
+//	
+//	Para i <- 0 hasta 19 con paso 1 Hacer
+//		array[i] <-Azar(100);
+//	FinPara
+//	
+//	Para i <- 0 hasta 19 con paso 1 Hacer
+//		Si (array[i]%2=0) Entonces
+//			arrayP[ratesP]<-array[i];
+//			ratesP<-ratesP+1;
+//		SiNo
+//			arrayI[ratesI]<-array[i];
+//			ratesI<-ratesI+1;
+//		FinSi
+//	FinPara
+//	
+//	Escribir 'Numeros pares son: ';
+//	
+//	Si ratesP>0 Entonces
+//		Para i <- 0 hasta ratesP-1 con paso 1 Hacer
+//			Escribir sin Saltar 'Pares ', arrayP[i], ", ";
+//		FinPara
+//		Escribir " ";
+//	SiNo
+//		Escribir Sin Saltar 'No hay numeros pares';
+//	FinSi
+//	Escribir " ";
+//	
+//	Si ratesI >1 Entonces
+//		Escribir "Los nuemros impares son: ";
+//		para i <- 0 hasta ratesI-1 con paso 1 Hacer
+//			Escribir sin Saltar 'Impares ', arrayI[i], ", ";
+//		FinPara
+//	SiNo
+//		Escribir Sin Saltar "No hay numeros impares";
+//	FinSi
+	
+	// punto 3
+	
+//	Definir i,number,cont Como Entero;	
+//	
+//	para number <- 1 hasta 1000 hacer 	
+//		i<- 1;
+//		cont <- 0;
+//		
+//		mientras i <= number hacer
+//			si number mod i = 0 entonces
+//				
+//				cont <- cont + 1;
+//			FinSi
+//			i<-i+1;
+//		FinMientras
+//		
+//		si cont = 2 entonces
+//			escribir "El numero, ",number, " es primo ";
+//		FinSi				
+//	Finpara	
+	
+	//punto 4
+	
+//	Definir row,col Como Entero;
+//	Definir matrix Como Caracter;
+//	Dimension matrix[4,5];
+//	
+//	matrix[0,0]<- '01';
+//	matrix[0,1]<- '02';
+//	matrix[0,2]<- '03';
+//	matrix[0,3]<- '04';
+//	matrix[0,4]<- '05';
+//	matrix[1,0]<- '06';
+//	matrix[1,1]<- '07';
+//	matrix[1,2]<- '08';
+//	matrix[1,3]<- '09';
+//	matrix[1,4]<- '10';
+//	matrix[2,0]<- '11';
+//	matrix[2,1]<- '12';
+//	matrix[2,2]<- '13';
+//	matrix[2,3]<- '14';
+//	matrix[2,4]<- '15';
+//	matrix[3,0]<- '16';
+//	matrix[3,1]<- '17';
+//	matrix[3,2]<- '18';
+//	matrix[3,3]<- '19';
+//	matrix[3,4]<- '20';
+//	
+//	Para row<-0 Hasta 3 Con Paso 1 Hacer
+//		Para col<-0 Hasta 4 Con Paso 1 Hacer
+//			Escribir  matrix[row,col],' ' Sin Saltar;
+//		FinPara
+//		Escribir '';
+//	FinPara
+//	
+//	Escribir '  ';
+//	
+//	Para row<-0 Hasta 0 Con Paso 1 Hacer
+//		Para col<-0 Hasta 4 Con Paso 1 Hacer
+//			Escribir  matrix[row,col],' ' Sin Saltar;
+//		FinPara
+//		Escribir '';
+//	FinPara
+//	
+//	Para row<-1 Hasta 1 Con Paso 1 Hacer
+//		Para col<-4 Hasta 0 Con Paso -1 Hacer
+//			Escribir  matrix[row,col],' ' Sin Saltar;
+//		FinPara
+//		Escribir '';
+//	FinPara
+//	
+//	Para row<-2 Hasta 2 Con Paso 1 Hacer
+//		Para col<-0 Hasta 4 Con Paso 1 Hacer
+//			Escribir  matrix[row,col],' ' Sin Saltar;
+//		FinPara
+//		Escribir '';
+//	FinPara
+//	
+//	Para row<-3 Hasta 3 Con Paso 1 Hacer
+//		Para col<-4 Hasta 0 Con Paso -1 Hacer
+//			Escribir  matrix[row,col],' ' Sin Saltar;
+//		FinPara
+//		Escribir '';
+	//	FinPara
+	
+	//punto 5
+	
+//	Definir row,col,r,c, results Como Entero;
+//	Definir matrix Como Caracter;
+//	Dimension matrix[12,12];
+//	Dimension results[10,10];
+//	
+//	matrix[0,0]<- '   ';
+//	matrix[0,1]<- '   ';
+//	matrix[0,2]<- '   ';
+//	matrix[0,3]<- ' C ';
+//	matrix[0,4]<- ' O ';
+//	matrix[0,5]<- ' L ';
+//	matrix[0,6]<- ' U ';
+//	matrix[0,7]<- ' M ';
+//	matrix[0,8]<- ' N ';
+//	matrix[0,9]<- ' A ';
+//	matrix[0,10]<- ' S ';
+//	matrix[0,11]<- '   ';
+//	
+//	matrix[1,0]<- '   ';
+//	matrix[1,1]<- '   ';
+//	matrix[1,2]<- '  0  ';
+//	matrix[1,3]<- '  1  ';
+//	matrix[1,4]<- '  2  ';
+//	matrix[1,5]<- '  3  ';
+//	matrix[1,6]<- '  4  ';
+//	matrix[1,7]<- '  5  ';
+//	matrix[1,8]<- '  6  ';
+//	matrix[1,9]<- '  7  ';
+//	matrix[1,10]<- '  8  ';
+//	matrix[1,11]<- '  9 ';
+//	
+//	matrix[2,0]<- '   ';
+//	matrix[2,1]<- ' 0 ';
+//	matrix[2,2]<- ' 1x1 ';
+//	matrix[2,3]<- ' 2x1 ';
+//	matrix[2,4]<- ' 3x1 ';
+//	matrix[2,5]<- ' 4x1 ';
+//	matrix[2,6]<- ' 5x1 ';
+//	matrix[2,7]<- ' 6x1 ';
+//	matrix[2,8]<- ' 7x1 ';
+//	matrix[2,9]<- ' 8x1 ';
+//	matrix[2,10]<- ' 9x1 ';
+//	matrix[2,11]<- ' 10x1 ';
+//	
+//	matrix[3,0]<- '   ';
+//	matrix[3,1]<- ' 1 ';
+//	matrix[3,2]<- ' 2x1 ';
+//	matrix[3,3]<- ' 2x2 ';
+//	matrix[3,4]<- ' 3x2 ';
+//	matrix[3,5]<- ' 4x2 ';
+//	matrix[3,6]<- ' 5x2 ';
+//	matrix[3,7]<- ' 6x2 ';
+//	matrix[3,8]<- ' 7x2 ';
+//	matrix[3,9]<- ' 8x2 ';
+//	matrix[3,10]<- ' 9x2 ';
+//	matrix[3,11]<- ' 10x2 ';
+//	
+//	matrix[4,0]<- ' F ';
+//	matrix[4,1]<- ' 2 ';
+//	matrix[4,2]<- ' 1X3 ';
+//	matrix[4,3]<- ' 2X3 ';
+//	matrix[4,4]<- ' 3X3 ';
+//	matrix[4,5]<- ' 4X3 ';
+//	matrix[4,6]<- ' 5X3 ';
+//	matrix[4,7]<- ' 6x3 ';
+//	matrix[4,8]<- ' 7x3 ';
+//	matrix[4,9]<- ' 8x3 ';
+//	matrix[4,10]<- ' 9x3 ';
+//	matrix[4,11]<- ' 10x3 ';
+//	
+//	matrix[5,0]<- ' I ';
+//	matrix[5,1]<- ' 3 ';
+//	matrix[5,2]<- ' 1x4 ';
+//	matrix[5,3]<- ' 2x4 ';
+//	matrix[5,4]<- ' 3x4 ';
+//	matrix[5,5]<- ' 4x4 ';
+//	matrix[5,6]<- ' 5x4 ';
+//	matrix[5,7]<- ' 6x4 ';
+//	matrix[5,8]<- ' 7x4 ';
+//	matrix[5,9]<- ' 8x4 ';
+//	matrix[5,10]<- ' 9x4 ';
+//	matrix[5,11]<- ' 10x4 ';
+//	
+//	matrix[6,0]<- ' L ';
+//	matrix[6,1]<- ' 4 ';
+//	matrix[6,2]<- ' 1x5 ';
+//	matrix[6,3]<- ' 2x5 ';
+//	matrix[6,4]<- ' 3x5 ';
+//	matrix[6,5]<- ' 4x5 ';
+//	matrix[6,6]<- ' 5x5 ';
+//	matrix[6,7]<- ' 6x5 ';
+//	matrix[6,8]<- ' 7x5 ';
+//	matrix[6,9]<- ' 8x5 ';
+//	matrix[6,10]<- ' 9x5 ';
+//	matrix[6,11]<- ' 10x5 ';
+//	
+//	matrix[7,0]<- ' A ';
+//	matrix[7,1]<- ' 5 ';
+//	matrix[7,2]<- ' 1x6 ';
+//	matrix[7,3]<- ' 2x6 ';
+//	matrix[7,4]<- ' 3x6 ';
+//	matrix[7,5]<- ' 4x6 ';
+//	matrix[7,6]<- ' 5x6 ';
+//	matrix[7,7]<- ' 6x6 ';
+//	matrix[7,8]<- ' 7x6 ';
+//	matrix[7,9]<- ' 8x6 ';
+//	matrix[7,10]<- ' 9x6 ';
+//	matrix[7,11]<- ' 10x6 ';
+//	
+//	matrix[8,0]<- ' S ';
+//	matrix[8,1]<- ' 6 ';
+//	matrix[8,2]<- ' 1x7 ';
+//	matrix[8,3]<- ' 2x7 ';
+//	matrix[8,4]<- ' 3x7 ';
+//	matrix[8,5]<- ' 4x7 ';
+//	matrix[8,6]<- ' 5x7 ';
+//	matrix[8,7]<- ' 6x7 ';
+//	matrix[8,8]<- ' 7x7 ';
+//	matrix[8,9]<- ' 8x7 ';
+//	matrix[8,10]<- ' 9x7 ';
+//	matrix[8,11]<- ' 10x7 ';
+//	
+//	matrix[9,0]<- '   ';
+//	matrix[9,1]<- ' 7 ';
+//	matrix[9,2]<- ' 1x8 ';
+//	matrix[9,3]<- ' 2x8 ';
+//	matrix[9,4]<- ' 3x8 ';
+//	matrix[9,5]<- ' 4x8 ';
+//	matrix[9,6]<- ' 5x8 ';
+//	matrix[9,7]<- ' 6x8 ';
+//	matrix[9,8]<- ' 7x8 ';
+//	matrix[9,9]<- ' 8x8 ';
+//	matrix[9,10]<- ' 9x8 ';
+//	matrix[9,11]<- ' 10x8 ';
+//	
+//	matrix[10,0]<- '   ';
+//	matrix[10,1]<- ' 8 ';
+//	matrix[10,2]<- ' 1x9 ';
+//	matrix[10,3]<- ' 2x9 ';
+//	matrix[10,4]<- ' 3x9 ';
+//	matrix[10,5]<- ' 4x9 ';
+//	matrix[10,6]<- ' 5x9 ';
+//	matrix[10,7]<- ' 6x9 ';
+//	matrix[10,8]<- ' 7x9 ';
+//	matrix[10,9]<- ' 8x9 ';
+//	matrix[10,10]<- ' 9x9 ';
+//	matrix[10,11]<- ' 10x9 ';
+//	
+//	matrix[11,0]<- '   ';
+//	matrix[11,1]<- ' 9 ';
+//	matrix[11,2]<- ' 1x10 ';
+//	matrix[11,3]<- '2x10 ';
+//	matrix[11,4]<- '3x10 ';
+//	matrix[11,5]<- '4x10 ';
+//	matrix[11,6]<- '5x10 ';
+//	matrix[11,7]<- '6x10 ';
+//	matrix[11,8]<- '7x10 ';
+//	matrix[11,9]<- '8x10 ';
+//	matrix[11,10]<- '9x10 ';
+//	matrix[11,11]<- '10x10 ';
+//	
+//	Para row<-0 Hasta 11 Con Paso 1 Hacer
+//		Para col<-0 Hasta 11 Con Paso 1 Hacer
+//			Escribir  matrix[row,col],' ' Sin Saltar;
+//		FinPara
+//		Escribir '';
+//	FinPara
+//	
+//	Escribir '';
+//	
+//	Escribir 'Ingrese la fila que desea consultar ' ;
+//	Leer r;
+//	Escribir 'Ingrese la columna que desea consultar ' ;
+//	Leer c;
+//	
+//	results[0,0]<- 1; results[0,1]<- 2;results[0,2]<-3;results[0,3]<- 4;results[0,4]<- 5;
+//	results[0,5]<- 6; results[0,6]<- 7; results[0,7]<- 8; results[0,8]<- 9; results[0,9]<- 10;
+//	
+//	results[1,0]<- 2; results[1,1]<- 4; results[1,2]<- 6; results[1,3]<- 8;results[1,4]<- 10;
+//	results[1,5]<- 12; results[1,6]<- 14; results[1,7]<- 16; results[1,8]<- 18;results[1,9]<- 20;
+//	
+//	results[2,0]<- 3;results[2,1]<- 6;results[2,2]<- 9;results[2,3]<- 12;results[2,4]<- 15;
+//	results[2,5]<- 18;results[2,6]<- 21;results[2,7]<- 24;results[2,8]<- 27;results[2,9]<- 30;
+//	
+//	results[3,0]<- 4;results[3,1]<- 8;results[3,2]<- 12;results[3,3]<- 16;results[3,4]<- 20;
+//	results[3,5]<- 24;results[3,6]<- 28;results[3,7]<- 32;results[3,8]<- 36;results[3,9]<- 40;
+//	
+//	results[4,0]<- 5;results[4,1]<- 10;results[4,2]<- 15;results[4,3]<- 20;results[4,4]<- 25;
+//	results[4,5]<- 30;results[4,6]<- 35;results[4,7]<- 40;results[4,8]<- 45;results[4,9]<- 50;
+//	
+//	results[5,0]<- 6;results[5,1]<- 12;results[5,2]<- 18;results[5,3]<- 24;results[5,4]<- 30;
+//	results[5,5]<- 36;results[5,6]<- 42;results[5,7]<- 48;results[5,8]<- 54;results[5,9]<- 60;
+//	
+//	results[6,0]<- 7;results[6,1]<- 14;results[6,2]<- 21;results[6,3]<- 28;results[6,4]<- 35;
+//	results[6,5]<- 42;results[6,6]<- 49;results[6,7]<- 56;results[6,8]<- 63;results[6,9]<- 70;
+//	
+//	results[7,0]<- 8;results[7,1]<- 16;results[7,2]<- 24;results[7,3]<- 32;results[7,4]<- 40;
+//	results[7,5]<- 48;results[7,6]<- 56;results[7,7]<- 64;results[7,8]<- 72;results[7,9]<- 80;
+//	
+//	results[8,0]<- 9;results[8,1]<- 18;results[8,2]<- 27;results[8,3]<- 36;results[8,4]<- 45;
+//	results[8,5]<- 54;results[8,6]<- 63;results[8,7]<- 72;results[8,8]<- 81;results[8,9]<- 90;
+//	
+//	results[9,0]<- 10;results[9,1]<- 20;results[9,2]<- 30;results[9,3]<- 40;results[9,4]<- 50;
+//	results[9,5]<- 60;results[9,6]<- 70;results[9,7]<- 80;results[9,8]<- 90;results[9,9]<- 10;
+//	
+//	
+//	Escribir  'El resultado es: ', results[r,c],' ' Sin Saltar;
+//	Escribir '';
+//
+//
+//	
+//FinProceso
