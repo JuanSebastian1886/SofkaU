@@ -1,0 +1,356 @@
+Proceso TallerCiclos
+	// punto 1
+	
+//	Definir base, i, asterisk Como Entero;
+//	Escribir "Ingrese la base";
+//	Leer base;
+//	Para i<- 1 Hasta base Con paso 1 Hacer
+//		Para asterisk <- 1 Hasta i Con paso 1 Hacer
+//			Escribir Sin Saltar " * ";
+//		FinPara
+//		Escribir "   ";
+//	FinPara
+	
+	// punto 2
+	
+//	Definir base, i,s,espace, asterisk Como Entero;
+//	Definir x Como Logico;
+//	Escribir "Ingrese la base";
+//	Leer base;
+//	s<-1;
+//	
+//	Mientras s=1 Hacer
+//		s<-s+1;
+//		Para i<- 1 Hasta base Con paso 1 Hacer
+//			Para espace <- 1 Hasta base-i Con Paso 1 Hacer
+//				Escribir Sin saltar "   ";
+//			FinPara
+//			Para asterisk <- 1 Hasta i Con paso 1 Hacer
+//				Escribir Sin Saltar " * ";
+//			FinPara
+//			Escribir "   ";
+//		FinPara
+//	
+//	FinMientras
+	
+	// punto 3
+	
+//	Definir height, i, espacio, asterisco,control,base Como Entero;
+//	Escribir "Ingrese la altura del arbol";
+//	Leer height;	
+//	control<-0;
+//	
+//	Repetir
+//		control<-control+1;
+//		Para i<- 1 Hasta height Con paso 1 Hacer
+//			Para espacio <- 1 Hasta height-i Con Paso 1 Hacer
+//				Escribir Sin saltar " ";
+//			FinPara
+//			Para asterisco <- 1 Hasta i Con paso 1 Hacer
+//				Escribir Sin Saltar " *";
+//			FinPara
+//			Escribir "   ";
+//			
+//		FinPara
+//		
+//		Escribir  "        * * *";
+//		Escribir  "        * * *";
+//		Escribir  "      * * * * *";
+//		Escribir  "    * * * * * * *";
+//
+//	Hasta Que control=1;
+	
+
+	// punto 4
+	
+//	Definir number,control,i Como Entero;
+//	
+//	Escribir 'Ingrese el número de la tabla de multiplicar que desea';
+//	Leer number;
+//	
+//	Para control<-1 Hasta 10 Con Paso 1 Hacer
+//		i<-control*number;
+//		Escribir i;
+//		
+//	FinPara
+	
+	// punto 5
+	
+//	Definir name Como Caracter;
+//	Definir control Como Logico;
+//	Definir option Como Entero;
+//	control<-Verdadero;
+//	
+//	Mientras control=Verdadero Hacer
+//		Limpiar Pantalla;
+//		Escribir 'Menú de usuario';
+//		Escribir '1. Capturar nombre';
+//		Escribir '2. Saludar persona';
+//		Escribir '3. Salir del sistema';
+//		Leer option;
+//		
+//		
+//		Segun option Hacer
+//			1:
+//				Escribir 'Indique su nombre completo ';
+//				leer name;
+//				
+//				Escribir 'El suario ingresado fue: ', name;
+//				
+//			2:
+//				Escribir 'Hola! usuario, esperamos este bien';
+//				
+//			3:
+//				Escribir 'Saliendo...';
+//			De Otro Modo:
+//				Escribir 'La opcion no es valida';
+//		FinSegun
+//		
+//		Escribir 'desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//		Leer control;
+//	FinMientras
+//	
+	
+	// punto 6
+	
+//	Definir name,company,nameS,nameD Como Caracter;
+//	Definir phone,option,i Como Entero;
+//	Definir control,search Como Logico;
+//	Dimension phone[3];
+//	Dimension name[3];
+//	Dimension company[3];
+//	control<-Verdadero;
+//	search<-Falso;
+//	
+//	Mientras control=Verdadero Hacer
+//		
+//		Limpiar Pantalla;
+//		Escribir 'Menú de usuario';
+//		Escribir '1. Añadir usuario';
+//		Escribir '2. Buscar usuario';
+//		Escribir '3. Borrar usuario';
+//		Leer option;
+//		
+//		// se debe personalizar el lenguaje PSeint para que el subindice comience en 1 y no en 0
+//		
+//		Segun option Hacer
+//			1:
+//				Para i<-1 Hasta 3 Con Paso 1 Hacer
+//					Escribir 'Indique el nombre completo del primer usuario ';
+//					leer name[i];
+//					
+//					Escribir 'Indique el numero de telefono ';
+//					leer phone[i];
+//					
+//					Escribir 'Indique la organizacíon a la que pertenece ';
+//					leer company[i];
+//				FinPara
+//				
+//				Si phone[1]=phone[2] o phone[1]=phone[3] o phone[2]=phone[3] Entonces
+//					Escribir 'Telefono ya registrado con un usuario';
+//				SiNo
+//					Escribir 'Usuarios registrados';
+//					Escribir 'Primer usuario ingresado fue: ', name[1] , phone[1] , company[1];
+//					Escribir 'Segundo usuario ingresado fue: ', name[2] , phone[2] , company[2];
+//					Escribir 'Tercer usuario ingresado fue: ', name[3] , phone[3] , company[3];
+//				FinSi
+//				
+//			2:
+//				Escribir 'Ingrese el usuario que desea buscar';
+//				Leer nameS;
+//				
+//				Para i<-1 Hasta 3 Con Paso 1 Hacer
+//					Si nameS=name[i] Entonces
+//						Escribir 'El usuario registrado es: ', name[i];
+//						
+//					SiNo
+//						Escribir 'Usuario no registrado';
+//					FinSi
+//				FinPara
+//				
+//			3:
+//				Escribir 'Que usuario desea borrar';
+//				Leer nameD;
+//				
+//				Para i<-1 Hasta 3 Con Paso 1 Hacer
+//					Si nameD=name[i] Entonces
+//						
+//						Escribir 'El usuario borrado fue: ', name[i];
+//						name[i]<-' ';
+//					SiNo
+//						Escribir 'Usuario no registrado';
+//					FinSi
+//				FinPara
+//				
+//			De Otro Modo:
+//				Escribir 'La opcion no es valida';
+//		FinSegun
+//		
+//		Escribir 'desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//		Leer control;
+//	FinMientras
+	
+	//punto 7
+	
+//	Definir name,brand,plate,plateS,plateR Como Caracter;
+//	Definir phone,option,i Como Entero;
+//	Definir control,search Como Logico;
+//	Dimension phone[2];
+//	Dimension name[2];
+//	Dimension brand[2];
+//	Dimension plate[2];
+//	control<-Verdadero;
+//	search<-Verdadero;
+//	
+//	Mientras control=Verdadero Hacer
+//		
+//		Limpiar Pantalla;
+//		Escribir 'Menú de usuario';
+//		Escribir '1. Ingreso a parqueadero';
+//		Escribir '2. Retiro de parqueadero';
+//		Escribir '3. Consultar vehiculo';
+//		Leer option;
+//		
+//		
+//		// se debe personalizar el lenguaje PSeint para que el subindice comience en 1 y no en 0
+//		
+//		Segun option Hacer
+//			1:
+////				Repetir
+//				Para i<-1 Hasta 2 Con Paso 1 Hacer
+//					
+//						//Intente generar un ciclo para que si el usuario no deseaba ingresar todos los
+//						// vehiculos se registraran en varios momentos, pero cuando se lee la variable 
+//						//plate[i], al ser un arreglo el compilador no encuentran las demas posiciones y genera error.
+//						
+//						//Mientras search=Verdadero Hacer
+//							
+//						Escribir 'Indique el nombre completo del primer usuario ';
+//						leer name[i];
+//						
+//						Escribir 'Indique el numero de telefono ';
+//						leer phone[i];
+//						
+//						Escribir 'Indique la placa del vehiculo ';
+//						leer plate[i];
+//						
+//						Escribir 'Indique la marca del vehiculo ';
+//						leer brand[i];
+//						
+////						Escribir 'desea continuar realizando otra opcion? (Verdadero/ Falso)';
+////						Leer search;
+//
+////						FinMientras
+//					FinPara
+//				
+//			2:
+//				Escribir 'Ingrese la placa del vehiculo a retirar';
+//				Leer plateS;
+//				
+//				Para i<-1 Hasta 2 Con Paso 1 Hacer
+//					Si plateS=plate[i] Entonces
+//						Escribir 'El vehiculo registrado que se retita: ', plate[i];
+//						plate[i]<-' ';
+//						
+//					SiNo
+//						Escribir 'Usuario no registrado';
+//					FinSi
+//				FinPara
+//				
+//			3:
+//				Escribir 'Que vehiculo desea consultar?';
+//				Leer plateR;
+//				
+//				Para i<-1 Hasta 2 Con Paso 1 Hacer
+//					Si plateR=plate[i] Entonces
+//						
+//						Escribir 'El vehiculo encontrado fue: ', plate[i];
+//					SiNo
+//						Escribir 'Usuario no registrado';
+//					FinSi
+//				FinPara
+//				
+//			De Otro Modo:
+//				Escribir 'La opcion no es valida';
+//		FinSegun
+//		
+//		Escribir 'Desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//		Leer control;
+//	FinMientras
+//	
+	// punto 8
+//	Definir name,test Como Caracter;
+//	Definir option,i,result Como Entero;
+//	Definir control Como Logico;
+//	Dimension name[8];
+//	Dimension test[8];
+//	Dimension result[8];
+//	control<-Verdadero;
+//	
+//	// se establece que para la aprobacion del curso se debe obtener un puntaje 
+//	// mayor de 70 sobre 100
+//	
+//	Mientras control=Verdadero Hacer
+//		
+//		Limpiar Pantalla;
+//		Escribir 'Menú de usuario';
+//		Escribir '1. Registro de ingreso al curso';
+//		Escribir '2. Registro de usuarios';
+//		Escribir '3. Resultados';
+//		Leer option;
+//		
+//		
+//		
+//		Segun option Hacer
+//			1:
+//				
+//				Para i<-0 Hasta 7 Con Paso 1 Hacer
+//					
+//					//Mientras search=Verdadero Hacer
+//					
+//					Escribir 'Indique el nombre completo del usuario ';
+//					leer name[i];
+//					
+//					Escribir 'Presento la prueba?, si/no ';
+//					leer test[i];
+//					
+//					Escribir 'Si presento la prueba, indique el puntaje obtenido, sino marque 0 ';
+//					leer result[i];
+//					Limpiar Pantalla;
+//					Esperar Tecla;
+//				FinPara
+//				
+//			2:
+//				
+//				Para i<-0 Hasta 7 Con Paso 1 Hacer
+//					Si test[i]= 'si' Entonces
+//						// no encontre la forma poner todos los resultados en un solo vector
+//						// por eso se repite para cada usuario el mensaje
+//						Escribir 'Los usuarios que pesentaron la prueba son: ', name[i];
+//						Escribir '';
+//					FinSi
+//				FinPara
+//				
+//				
+//				
+//			3:
+//				Escribir 'Quienes obtuvieron un puntaje mayor a 70 aprobaron';
+//				Escribir 'Usuarios que aprobaron:';
+//				Escribir '';
+//				Para i<-0 Hasta 7 Con Paso 1 Hacer
+//					Si result[i] >= 70 Entonces
+//						Escribir name[i] , ' Aprobo la prueba';
+//					FinSi
+//				FinPara	
+//				Escribir '';
+//				
+//			De Otro Modo:
+//				Escribir 'La opcion no es valida';
+//		FinSegun
+//		
+//		Escribir 'Desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//		Leer control;
+//		
+//	FinMientras
+//
+//FinProceso
