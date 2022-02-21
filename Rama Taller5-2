@@ -1,0 +1,298 @@
+SubProceso  tN<- takeName()
+	Definir tN Como Caracter;
+	Escribir 'Indique el nombre completo del usuario ';
+	leer tN;
+FinSubProceso
+
+SubProceso tP <- takePhone()
+	Definir tP Como Entero;
+	Escribir 'Ingrese el numero de telefono ';
+	leer tP;
+FinSubProceso
+
+SubProceso tC <- company()
+	Definir tC Como Caracter;
+	Escribir 'Indique la organizacíon a la que pertenece ';	
+	leer tC;
+FinSubProceso
+
+SubProceso sName <- searchN(name,i)
+	Definir sName Como Caracter;
+	Escribir 'Ingrese el usuario que desea buscar';
+	Leer sName;
+	
+	Para i<-0 Hasta 2 Con Paso 1 Hacer
+		Si sName=name[i] Entonces
+			Escribir 'El usuario registrado es: ', name[i];
+			
+		SiNo
+			Escribir 'Usuario no registrado';
+		FinSi
+	FinPara
+FinSubProceso
+
+SubProceso eName <- erase (name,i)
+	Definir eName Como Caracter;
+	Escribir 'Que usuario desea borrar';
+	Leer eName;
+	
+	Para i<-0 Hasta 2 Con Paso 1 Hacer
+		Si eName=name[i] Entonces
+			
+			Escribir 'El usuario borrado fue: ', name[i];
+			Name[i]<-' ';
+		SiNo
+			Escribir 'Usuario no registrado';
+		FinSi
+	FinPara
+FinSubProceso
+
+SubProceso registerP <- takePlate()
+	Definir registerP Como Caracter;
+	Escribir 'Indique la placa del vehiculo ';
+	leer registerP;
+FinSubProceso
+
+SubProceso registerB <- takeBrand()
+	Definir registerB Como Caracter;
+	Escribir 'Indique la marca del vehiculo ';
+	leer registerB;
+FinSubProceso
+
+SubProceso ePlate <- exitplate( plate,i)
+	Definir ePlate Como Caracter;
+	Escribir 'Ingrese la placa del vehiculo a retirar';
+	Leer ePlate;
+	
+	Para i<-0 Hasta 1 Con Paso 1 Hacer
+		Si ePlate=plate[i] Entonces
+			Escribir 'El vehiculo registrado que se retita: ', plate[i];
+			plate[i]<-' ';
+			
+		SiNo
+			Escribir 'Usuario no registrado';
+		FinSi
+	FinPara
+FinSubProceso
+
+SubProceso sPlate <- searchP ( plate,i )
+	Definir sPlate Como Caracter;
+	Escribir 'Que vehiculo desea consultar?';
+	Leer sPlate;
+	
+	Para i<-1 Hasta 1 Con Paso 1 Hacer
+		
+		Si sPlate=plate[i] Entonces
+			
+			Escribir 'El vehiculo encontrado fue: ', plate[i];
+		SiNo
+			Escribir 'Usuario no registrado';
+		FinSi
+	FinPara
+FinSubProceso
+
+SubProceso takeT <- test()
+	Definir takeT Como Caracter;
+	Escribir 'Presento la prueba?, si/no ';
+	leer takeT;
+FinSubProceso
+
+SubProceso takeR <- resultT()
+	Definir takeR Como Entero;
+	Escribir 'Si presento la prueba, indique el puntaje obtenido, sino marque 0 ';
+	leer takeR;
+FinSubProceso
+
+SubProceso users(testR,i,name)
+	
+	Para i<-0 Hasta 7 Con Paso 1 Hacer
+		Si testR[i]= 'si' Entonces
+			
+			Escribir 'Los usuarios que presentaron la prueba son: ', name[i];
+			Esperar Tecla;
+			Limpiar Pantalla;
+		FinSi
+	FinPara
+FinSubProceso
+
+SubProceso  approved( result,i,name )
+	Para i<-0 Hasta 7 Con Paso 1 Hacer
+		Si result[i] >= 70 Entonces
+			Escribir name[i];
+			Esperar Tecla;
+			Limpiar Pantalla;
+		FinSi
+	FinPara	
+FinSubProceso
+
+
+
+
+
+
+Proceso TallerFuncionesPunto2
+	
+	// punto 6
+	
+//	Definir name,comp,nameS,nameD Como Caracter;
+//	Definir phone,option,i Como Entero;
+//	Definir control Como Logico;
+//	Dimension phone[3];
+//	Dimension name[3];
+//	Dimension comp[3];
+//
+//	control<-Verdadero;
+//	
+//	Mientras control=Verdadero Hacer
+//		
+//		Limpiar Pantalla;
+//		Escribir 'Menú de usuario';
+//		Escribir '1. Añadir usuario';
+//		Escribir '2. Buscar usuario';
+//		Escribir '3. Borrar usuario';
+//		Leer option;
+//		
+//		
+//		Segun option Hacer
+//			1:
+//				Para i<-0 Hasta 2 Con Paso 1 Hacer
+//					
+//					name[i]<-takeName();
+//					phone[i]<-tahePhone();
+//					comp[i]<-company();
+//					Limpiar Pantalla;
+//					
+//				FinPara
+//				
+//				Si phone[0]=phone[1] o phone[0]=phone[2] o phone[1]=phone[2] Entonces
+//					Escribir 'Telefono ya registrado con un usuario';
+//					Escribir '';
+//				SiNo
+//					Escribir 'Usuarios registrados';
+//					Escribir 'Primer usuario ingresado fue: ', name[0] ,' ', phone[0] ,' ', comp[0];
+//					Escribir 'Segundo usuario ingresado fue: ', name[1] ,' ', phone[1] ,' ', comp[1];
+//					Escribir 'Tercer usuario ingresado fue: ', name[2] ,' ', phone[2] ,' ', comp[2];
+//					Escribir '';
+//				FinSi
+//				
+//			2:
+//				nameS<-searchN(name,i);
+//				
+//			3:
+//				nameD<-erase(name,i);
+//
+//			De Otro Modo:
+//				Escribir 'La opcion no es valida';
+//		FinSegun
+//		
+//		Escribir 'Desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//		Leer control;
+//	FinMientras
+	
+	//punto 7
+	
+//	Definir name,brand,plate,plateS,plateR Como Caracter;
+//	Definir phone,option,i,totalV Como Entero;
+//	Definir control,search Como Logico;
+//	Dimension phone[5];
+//	Dimension name[5];
+//	Dimension brand[5];
+//	Dimension plate[5];
+//	control<-Verdadero;
+//
+//	
+//	Mientras control=Verdadero Hacer
+//		
+//		Limpiar Pantalla;
+//		Escribir 'Menú de usuario';
+//		Escribir '1. Ingreso a parqueadero';
+//		Escribir '2. Retiro de parqueadero';
+//		Escribir '3. Consultar vehiculo';
+//		Leer option;
+//	
+//		Segun option Hacer
+//			1:
+//				
+//					Para i<-0 Hasta 1 Con Paso 1 Hacer
+//						
+//						name[i]<-takeName();
+//						phone[i]<-takePhone();
+//						plate[i]<-takePlate();
+//						brand[i]<-takeBrand();
+//						Limpiar Pantalla;
+//					
+//					FinPara
+//					
+//				
+//				
+//			2:
+//				plateR<-exitplate(plate,i);
+//				Esperar Tecla;
+//				Limpiar Pantalla;
+//				
+//			3:
+//				plateS<-searchP ( plate,i );
+//	
+//	De Otro Modo:
+//		Escribir 'La opcion no es valida';
+//	FinSegun
+//
+//	Escribir 'Desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//	Leer control;
+//FinMientras
+
+// punto 8
+//Definir name,testR,capture Como Caracter;
+//Definir option,i,result Como Entero;
+//Definir control Como Logico;
+//Dimension name[8];
+//Dimension testR[8];
+//Dimension result[8];
+//control<-Verdadero;
+
+// se establece que para la aprobacion del curso se debe obtener un puntaje 
+// mayor de 70 sobre 100
+
+//Mientras control=Verdadero Hacer
+//	
+//	Limpiar Pantalla;
+//	Escribir 'Menú de usuario';
+//	Escribir '1. Registro de ingreso al curso';
+//	Escribir '2. Registro de usuarios';
+//	Escribir '3. Resultados';
+//	Leer option;
+//	
+	
+	// se debe personalizar el lenguaje PSeint para que el subindice comience en 1 y no en 0
+	
+//	Segun option Hacer
+//		1:
+//			
+//			Para i<-0 Hasta 7 Con Paso 1 Hacer
+//				
+//				name[i]<-takeName();
+//				testR[i]<-test();
+//				result[i]<-resultT();
+//				Limpiar Pantalla;
+//				
+//			FinPara
+//			
+//		2:
+//			
+//			users(testR,i,name);
+//		3:
+//			Escribir 'Quienes obtuvieron un puntaje mayor a 70 aprobaron';
+//			Escribir 'Usuarios que aprobaron:';
+//			approved( result,i,name );
+//			
+//		De Otro Modo:
+//			Escribir 'La opcion no es valida';
+//	FinSegun
+//	
+//	Escribir 'Desea continuar realizando otra opcion? (Verdadero/ Falso)';
+//	Leer control;
+//	
+//FinMientras
+
+	
+FinProceso
