@@ -1,0 +1,110 @@
+Proceso variables_e_impresion
+	//punto 1
+	
+	Definir name Como Caracter;
+	Definir lastName Como Caracter;
+	
+	Escribir 'Indique su nombre';
+	Leer name;
+	
+	Escribir 'Indique su apellido';
+	Leer lastName;
+	
+	Limpiar Pantalla;
+	
+	//punto 2
+	
+	Definir name Como Caracter;
+	Definir lastName Como Caracter;
+	Definir age Como Entero;
+	Definir height Como Real;
+	
+	
+	Escribir 'Indique su nombre';
+	Leer name;
+	
+	Escribir 'Indique su apellido';
+	Leer lastName;
+	
+	Escribir 'Indique su edad';
+	Leer age;
+	
+	Escribir 'Indique su estatura en cm';
+	Leer height;
+	
+	Limpiar Pantalla;
+	
+	punto 3
+	
+	Definir name Como Caracter;
+	Definir lastName Como Caracter;
+	Definir nameMama Como Caracter;
+	Definir lastMama Como Caracter;
+	Definir namePapa Como Caracter;
+	Definir lastPapa Como Caracter;
+	
+	Escribir 'Indique su nombre';
+	Leer name;
+	
+	Escribir 'Indique su apellido';
+	Leer lastName;
+	
+	Escribir 'Indique el nombre de su mama';
+	Leer nameMama;
+	
+	Escribir 'Indique el apellido de su mama';
+	Leer lastMama;
+	
+	Escribir 'Indique el nombre de su papa';
+	Leer namePapa;
+	
+	Escribir 'Indique el apellido de su papa';
+	Leer lastPapa;
+	
+	Limpiar Pantalla;
+	
+	Escribir 'Yo ', name ,' ', lastName;
+	Escribir 'Soy hijo de ', nameMama ,' ', lastMama; 
+	Escribir 'Y ', namePapa ,' ', lastPapa; 
+	
+	//punto 4
+	
+	Definir city Como Caracter;
+	Definir country Como Caracter;
+	
+	Escribir 'Indique el nombre de la cuidad capital de un país';
+	Leer city;
+	
+	Escribir 'Indique el nombre del país cuya capital es la cuidad ingresada';
+	Leer country;
+	
+	Limpiar Pantalla;
+	
+	Escribir 'La cuidad ', city;
+	Escribir 'Es la capital del país ', country; 
+	
+	//punto 5
+	
+	Definir type Como Caracter;
+	Definir name Como Caracter;
+	Definir age Como Caracter;
+	Definir nameOwner Como Caracter;	
+	
+	Escribir 'Indique el nombre de la mascota';
+	Leer name;
+	
+	Escribir 'Indique la edad de la mascota (ingrese el dato numerico)';
+	Leer age;
+	
+	Escribir 'Indique el tipo de mascota';
+	Leer type;
+	
+	Escribir 'Indique su nombre completo';
+	Leer nameOwner;
+	
+	Limpiar Pantalla;
+	
+	Escribir 'Nombre de la mascota es ', name , ' ,es un(a) ', type , ' el cual, ';
+	Escribir ' tiene ', age , ' años de edad y ', nameOwner , ' es actualmente su dueño(a)';
+	
+FinProceso
